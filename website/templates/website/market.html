@@ -1,0 +1,23 @@
+<dialog id="market-dialog" class="market-dialog" aria-labelledby="market-heading">
+  <div class="market-fixed-header">
+    <div class="market-heading-row"><div><p class="eyebrow">PLAN YOUR HARVEST</p><h2 id="market-heading">Plant prices &amp; planting guide</h2></div><button type="button" data-close class="market-close" aria-label="Close">&times;</button></div>
+    <p class="market-intro">Browse your spreadsheet's reference prices, growing times and regional planting seasons.</p>
+    <div class="market-filters"><label><span>Find a plant</span><input type="search" id="market-search" placeholder="Search English or Lao names" autocomplete="off"></label><label><span>Crop group</span><select id="market-group"><option value="">All crop groups</option></select></label><label><span>Display currency</span><select id="market-currency"><option value="LAK">LAK · Lao kip</option><option value="USD">USD · US dollar</option><option value="THB">THB · Thai baht</option></select></label></div>
+  </div>
+  <div class="market-scroll">
+    <div class="market-source-banner"><span class="market-reference-badge" id="market-reference-badge">Spreadsheet reference · per kg</span><p>These are spreadsheet reference ranges, not today's local buying prices. Exact survey dates, named markets and grades are not provided.</p><a href="https://docs.google.com/spreadsheets/d/1fOM7QX1rh8FHpGnD7YNbH_k74JD6rbbWsnAP1tAkvj4/edit?gid=416596500" target="_blank" rel="noopener">Read the source spreadsheet &#8599;</a></div>
+    <div class="market-rate-row"><p id="market-rate-status" role="status">Loading exchange-rate information...</p><button type="button" id="market-reload">Reload market data</button></div>
+    <p class="market-currency-note">Currency changes the display units, not the market or crop value.</p>
+    <p id="market-status" class="market-status" role="status" aria-live="polite">Open Market to load all plants.</p>
+    <div class="market-layout"><section class="market-browser" aria-label="All plants and prices"><div class="market-table-wrap"><table class="market-table"><thead><tr><th>Plant</th><th>Lao market / kg</th><th>World reference / kg</th><th><span class="market-sr-only">Details</span></th></tr></thead><tbody id="market-rows"></tbody></table></div><div class="market-pagination"><button type="button" id="market-previous" aria-label="Previous plants">&#8592;</button><span id="market-page" data-no-translate></span><button type="button" id="market-next" aria-label="Next plants">&#8594;</button></div></section>
+      <section class="market-selected" id="market-selected" aria-labelledby="market-plant-name" hidden><p id="market-selected-group" class="market-selected-group"></p><h3 id="market-plant-name" tabindex="-1" data-no-translate></h3><p id="market-plant-lao" lang="lo" data-no-translate></p>
+        <div id="market-price-summary" class="market-price-summary"></div>
+        <h4 class="market-chart-heading">Price range per kilogram</h4><div id="market-price-chart"></div><p class="market-chart-note">Bars show low–high reference ranges, not a price-history trend or expected profit.</p>
+        <dl class="market-quick-facts"><div><dt>Growing time in the sheet</dt><dd id="market-growing-days"></dd></div><div><dt>Planting guide for Laos</dt><dd id="market-laos-season" lang="lo" data-no-translate></dd></div></dl>
+        <details id="market-more" class="market-more"><summary>Learn more about this plant</summary><div id="market-extra"></div></details>
+        <a id="market-row-source" class="market-row-source" target="_blank" rel="noopener">View this plant in the spreadsheet &#8599;</a>
+      </section>
+    </div>
+    <details class="market-provenance"><summary>About these prices and exchange rates</summary><p>The sheet describes its prices as average wholesale/retail reference ranges for 2026. They are not verified farm-gate offers. Check a buyer's current price, product variety, quality and transport costs.</p><p>The combined cassava / sweet potato row is displayed as two products. Its world-reference quote belongs to sweet potato; no world quote is supplied for raw cassava.</p><p>Growing times and planting seasons here come from the spreadsheet. They do not replace the app's separate FAO suitability assessment or verified local planting advice.</p><p id="market-import-date" data-no-translate></p><div id="market-source-notes" lang="lo" data-no-translate></div><p><a href="https://frankfurter.dev/" target="_blank" rel="noopener">Currency reference: Frankfurter</a>. <span>Reference conversion only; bank, cash and transfer rates may differ.</span></p></details>
+  </div>
+</dialog>

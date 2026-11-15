@@ -1,0 +1,7 @@
+{% load static %}
+<div class="map-explore-bar" role="group" aria-label="Explore the map">
+  <button type="button" id="country-view" disabled><svg class="icon" aria-hidden="true"><use href="{% static 'website/icons.svg' %}#country"></use></svg><span>Country view</span></button>
+  <button type="button" id="overview-toggle" aria-controls="map-overview" aria-expanded="false" disabled><svg class="icon" aria-hidden="true"><use href="{% static 'website/icons.svg' %}#overview"></use></svg><span>Mini map</span></button>
+  <button type="button" id="street-view-toggle" aria-haspopup="dialog" aria-controls="street-view-dialog" aria-pressed="false" disabled><svg class="icon street-person" aria-hidden="true"><use href="{% static 'website/icons.svg' %}#person"></use></svg><span>Street View</span></button>
+</div>
+<div id="map-overview-slot" class="map-overview-slot"></div>

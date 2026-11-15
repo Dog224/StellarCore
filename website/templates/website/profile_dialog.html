@@ -1,0 +1,10 @@
+{% load static %}
+{% if user.is_authenticated %}
+<dialog id="profile-dialog" class="profile-dialog" aria-labelledby="profile-heading">
+  <div class="dialog-heading"><h2 id="profile-heading">Your profile</h2><button type="button" data-close aria-label="Close">&times;</button></div>
+  <div class="profile-summary"><span class="profile-picture" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 22v-2a8 8 0 0 1 16 0v2"/></svg></span><div><strong data-no-translate>{% if user.get_full_name %}{{ user.get_full_name }}{% elif user.email %}{{ user.email }}{% elif account_contact.phone %}{{ account_contact.phone }}{% else %}MekongRise{% endif %}</strong><span>Signed in</span></div></div>
+  <dl class="profile-contact-list"><div><dt>Email address</dt><dd>{% if user.email %}<span data-no-translate>{{ user.email }}</span>{% else %}Not provided{% endif %}</dd></div><div><dt>Phone number</dt><dd>{% if account_contact.phone %}<span data-no-translate>{{ account_contact.phone }}</span>{% else %}Not provided{% endif %}</dd></div></dl>
+  <p class="data-note">Your field and calendar are saved to this account.</p>
+  <form class="account-logout" action="{% url 'logout' %}" method="post">{% csrf_token %}<button type="submit" class="profile-signout">Sign out</button></form>
+</dialog>
+{% endif %}

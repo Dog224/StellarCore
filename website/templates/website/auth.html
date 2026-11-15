@@ -1,0 +1,57 @@
+{% load static %}
+<!doctype html>
+<html lang="en" translate="no" class="notranslate">
+<head><script src="{% static 'website/theme.js' %}?v=1"></script>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="google" content="notranslate">
+  <meta name="description" content="MekongRise. Save Water. Breathe Clean. Earn More. Sign in or explore the farming map.">
+  <title>{% if signup %}Create account{% else %}Sign in{% endif %} · MekongRise</title>
+  <link rel="preload" as="image" href="{% static 'website/login-farm.jpg' %}">
+  <link rel="stylesheet" href="{% static 'website/auth.css' %}?v=5">
+  <script src="{% static 'website/language.js' %}?v=16" defer></script>
+  <script src="{% static 'website/auth.js' %}?v=2" defer></script>
+  <script src="{% static 'website/guest-access.js' %}?v=1" data-mode="entry" data-login="{% url 'login' %}" data-home="{% url 'home' %}" defer></script>
+  <link rel="stylesheet" href="{% static 'website/motion.css' %}?v=1"><script src="{% static 'website/motion.js' %}?v=1" defer></script>
+  <link rel="stylesheet" href="{% static 'website/theme.css' %}?v=4">
+</head>
+<body class="auth-page">
+  <a class="auth-skip" href="#auth-form">Skip to sign in</a>
+  <header class="auth-header">
+    {% include 'website/theme_toggle.html' %}
+    {% include 'website/language_picker.html' %}
+  </header>
+  <main class="auth-main">
+    <div class="auth-card">
+      <header class="auth-brand-block"><h1 id="auth-brand-heading" data-no-translate>MekongRise</h1><p class="auth-slogan">Save Water. Breathe Clean. Earn More.</p></header>
+      <section class="auth-story" aria-label="MekongRise goals">
+        <div class="auth-benefits">
+          <div><svg class="auth-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C9 7 5 11 5 15a7 7 0 0 0 14 0c0-4-4-8-7-12Z"/><path d="M9 15a3 3 0 0 0 3 3"/></svg><span>Fight Drought</span></div>
+          <div><svg class="auth-icon" aria-hidden="true"><use href="{% static 'website/icons.svg' %}#leaf"></use></svg><span>Reduce PM2.5</span></div>
+          <div><svg class="auth-icon" aria-hidden="true"><use href="{% static 'website/icons.svg' %}#chart"></use></svg><span>Grow Income</span></div>
+        </div>
+      </section>
+      <section class="auth-panel" aria-labelledby="auth-heading">
+        <div class="auth-panel-inner">
+          <h2 id="auth-heading">{% if signup %}Create your account{% else %}Sign in{% endif %}</h2>
+          <form id="auth-form" method="post" action="{% if signup %}{% url 'signup' %}{% else %}{% url 'login' %}{% endif %}" data-mode="{% if signup %}signup{% else %}login{% endif %}">
+            {% csrf_token %}<input type="hidden" name="next" value="{{ next }}">
+            {% if form.non_field_errors %}<div class="auth-form-errors" role="alert" tabindex="-1" data-auth-errors>{{ form.non_field_errors }}</div>{% endif %}
+            {% if signup %}
+            <p class="auth-contact-note">Add an email address, phone number, or both.</p>
+            <div class="auth-field"><label for="id_email">Email address <span class="auth-optional">(optional)</span></label>{{ form.email }}{{ form.email.errors }}</div>
+            <div class="auth-field"><label for="id_phone">Phone number <span class="auth-optional">(optional)</span></label>{{ form.phone }}{{ form.phone.errors }}<p class="auth-field-hint">For Laos, use 020... or +85620... For other countries, include the country code.</p></div>
+            {% else %}<div class="auth-field"><label for="id_username">Email or phone number</label>{{ form.username }}{{ form.username.errors }}</div>{% endif %}
+            <div class="auth-field"><label for="{% if signup %}id_password1{% else %}id_password{% endif %}">Password</label><div class="auth-password">{% if signup %}{{ form.password1 }}{% else %}{{ form.password }}{% endif %}<button type="button" class="password-toggle" data-password-toggle="{% if signup %}id_password1{% else %}id_password{% endif %}" aria-label="Show password" aria-pressed="false"><span>Show</span></button></div>{% if signup %}{{ form.password1.errors }}<p class="auth-field-hint">Use at least 8 characters. Avoid common passwords.</p>{% else %}{{ form.password.errors }}{% endif %}</div>
+            {% if signup %}<div class="auth-field"><label for="id_password2">Confirm password</label><div class="auth-password">{{ form.password2 }}<button type="button" class="password-toggle" data-password-toggle="id_password2" aria-label="Show password" aria-pressed="false"><span>Show</span></button></div>{{ form.password2.errors }}</div>{% endif %}
+            <button class="auth-submit" type="submit"><span>{% if signup %}Create account{% else %}Sign in{% endif %}</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6"/></svg></button>
+          </form>
+          <p class="auth-switch">{% if signup %}<span>Already have an account?</span> <a href="{% url 'login' %}">Sign in</a>{% else %}<span>New to MekongRise?</span> <a href="{% url 'signup' %}">Create an account</a>{% endif %}</p>
+          <div class="auth-divider"><span>or</span></div>
+          <a class="auth-guest" href="{% url 'home' %}" data-guest-entry><span>Continue as guest</span><svg class="auth-icon" aria-hidden="true"><use href="{% static 'website/icons.svg' %}#map"></use></svg></a>
+          <p class="auth-guest-note">You can explore without an account.</p>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer class="auth-footer"><span class="auth-background-credit"><a href="https://commons.wikimedia.org/wiki/File:Terraces_in_Che_Cu_Nha_commune,_Mu_Cang_Chai_(Unsplash).jpg" target="_blank" rel="noopener" data-no-translate>Farm photograph · Doan Tuan · Mù Cang Chải, Vietnam</a> · <a href="https://creativecommons.org/publicdomain/zero/1.0/" target="_blank" rel="noopener" data-no-translate>CC0</a></span><a href="{% url 'home' %}" data-guest-entry>Explore the map <span aria-hidden="true">↗</span></a></footer>
+</body>
+</html>

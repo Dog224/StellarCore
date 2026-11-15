@@ -1,0 +1,7 @@
+@keyframes mekong-popup-in{0%{opacity:0;transform:translateY(16px) scale(.97)}72%{opacity:1;transform:translateY(-2px) scale(1.008)}100%{opacity:1;transform:none}}
+@keyframes mekong-panel-in{from{opacity:.4;transform:translateY(7px)}to{opacity:1;transform:none}}
+@keyframes mekong-backdrop-in{from{opacity:0}to{opacity:1}}
+dialog[open]{animation:mekong-popup-in 340ms ease-out}
+dialog[open]::backdrop{animation:mekong-backdrop-in 180ms ease-out}
+[role=tabpanel]:not([hidden]){animation:mekong-panel-in 210ms ease-out}
+@media(prefers-reduced-motion:reduce){dialog[open],dialog[open]::backdrop,[role=tabpanel]:not([hidden]){animation:none!important}}

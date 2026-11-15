@@ -1,0 +1,1307 @@
+{
+  "version": "ecocrop-laos-v1",
+  "retrieved_on": "2026-11-14",
+  "fao_water_source_sha256": "8a415afc75f3f9dbf2a6a7dea0d1009f1c89173ba5b96f7613365c7b00f819fa",
+  "crops": [
+    {
+      "slug": "rice",
+      "name": "Rice",
+      "scientific_name": "Oryza sativa",
+      "category": "cereal",
+      "life_cycle": "annual crop use",
+      "requirements": {
+        "temperature_c": {
+          "optimal": [
+            20.0,
+            30.0
+          ],
+          "absolute": [
+            10.0,
+            36.0
+          ],
+          "unit": "°C"
+        },
+        "annual_rainfall_mm": {
+          "optimal": [
+            1500.0,
+            2000.0
+          ],
+          "absolute": [
+            1000.0,
+            4000.0
+          ],
+          "unit": "mm/year"
+        },
+        "ph": {
+          "optimal": [
+            5.5,
+            7.0
+          ],
+          "absolute": [
+            4.5,
+            9.0
+          ],
+          "unit": "pH"
+        },
+        "elevation_m": {
+          "optimal": [
+            null,
+            null
+          ],
+          "absolute": [
+            null,
+            2500.0
+          ],
+          "unit": "m"
+        },
+        "texture": {
+          "optimal": [
+            "wide"
+          ],
+          "absolute": [
+            "wide"
+          ]
+        },
+        "drainage": {
+          "optimal": "poorly (saturated >50% of year)",
+          "absolute": "poorly (saturated >50% of year)"
+        }
+      },
+      "growing_days": [
+        80.0,
+        180.0
+      ],
+      "first_harvest_days": [
+        80.0,
+        180.0
+      ],
+      "water": {
+        "seasonal_mm": [
+          450,
+          700
+        ],
+        "planning_growing_days": [
+          90,
+          150
+        ],
+        "basis": "FAO training manual Tables 4 and 5: approximate growing period and crop evapotranspiration; not irrigation volume or annual rainfall.",
+        "source_url": "https://www.fao.org/4/s2022e/s2022e02.htm",
+        "source_date": null,
+        "retrieved_on": "2026-11-14"
+      },
+      "image_path": "website/crops/rice.jpg",
+      "gaez_code": "RCW",
+      "gaez_potential_code": "RICW",
+      "notes": [
+        "EcoCrop requirements describe Oryza sativa broadly. The separate GAEZ check is explicitly a rain-fed lowland-rice scenario, not inferred field management."
+      ],
+      "source": {
+        "name": "FAO ECOCROP",
+        "record_id": 1574,
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1574",
+        "publication_date": null,
+        "retrieved_on": "2026-11-14",
+        "raw_sha256": "73e150aaf5c203a6b4c55e95d87284cfd3b5c70a425b888c9c436bb74b217e6c",
+        "database_note": "Historical FAO ECOCROP database, discontinued around 2015; source sheet is undated."
+      }
+    },
+    {
+      "slug": "maize",
+      "name": "Maize",
+      "scientific_name": "Zea mays",
+      "category": "cereal",
+      "life_cycle": "annual crop use",
+      "requirements": {
+        "temperature_c": {
+          "optimal": [
+            18.0,
+            33.0
+          ],
+          "absolute": [
+            10.0,
+            47.0
+          ],
+          "unit": "°C"
+        },
+        "annual_rainfall_mm": {
+          "optimal": [
+            600.0,
+            1200.0
+          ],
+          "absolute": [
+            400.0,
+            1800.0
+          ],
+          "unit": "mm/year"
+        },
+        "ph": {
+          "optimal": [
+            5.0,
+            7.0
+          ],
+          "absolute": [
+            4.5,
+            8.5
+          ],
+          "unit": "pH"
+        },
+        "elevation_m": {
+          "optimal": [
+            null,
+            null
+          ],
+          "absolute": [
+            null,
+            4000.0
+          ],
+          "unit": "m"
+        },
+        "texture": {
+          "optimal": [],
+          "absolute": []
+        },
+        "drainage": {
+          "optimal": null,
+          "absolute": null
+        }
+      },
+      "growing_days": [
+        65.0,
+        365.0
+      ],
+      "first_harvest_days": [
+        65.0,
+        365.0
+      ],
+      "water": {
+        "seasonal_mm": [
+          500,
+          800
+        ],
+        "planning_growing_days": [
+          125,
+          180
+        ],
+        "basis": "FAO training manual Tables 4 and 5: approximate growing period and crop evapotranspiration; not irrigation volume or annual rainfall.",
+        "source_url": "https://www.fao.org/4/s2022e/s2022e02.htm",
+        "source_date": null,
+        "retrieved_on": "2026-11-14"
+      },
+      "image_path": "website/crops/maize.jpg",
+      "gaez_code": "MZE",
+      "gaez_potential_code": "MAIZ",
+      "notes": [],
+      "source": {
+        "name": "FAO ECOCROP",
+        "record_id": 2175,
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=2175",
+        "publication_date": null,
+        "retrieved_on": "2026-11-14",
+        "raw_sha256": "285c1b1cc3522c5e34ddc552ec46306a364a7c44897421e421e1657bb8194bb0",
+        "database_note": "Historical FAO ECOCROP database, discontinued around 2015; source sheet is undated."
+      }
+    },
+    {
+      "slug": "cassava",
+      "name": "Cassava",
+      "scientific_name": "Manihot esculenta",
+      "category": "root",
+      "life_cycle": "annual crop use",
+      "requirements": {
+        "temperature_c": {
+          "optimal": [
+            20.0,
+            29.0
+          ],
+          "absolute": [
+            10.0,
+            35.0
+          ],
+          "unit": "°C"
+        },
+        "annual_rainfall_mm": {
+          "optimal": [
+            1000.0,
+            1500.0
+          ],
+          "absolute": [
+            500.0,
+            5000.0
+          ],
+          "unit": "mm/year"
+        },
+        "ph": {
+          "optimal": [
+            5.5,
+            8.0
+          ],
+          "absolute": [
+            4.0,
+            9.0
+          ],
+          "unit": "pH"
+        },
+        "elevation_m": {
+          "optimal": [
+            null,
+            null
+          ],
+          "absolute": [
+            null,
+            2000.0
+          ],
+          "unit": "m"
+        },
+        "texture": {
+          "optimal": [
+            "medium",
+            "light"
+          ],
+          "absolute": [
+            "heavy",
+            "medium",
+            "light",
+            "organic"
+          ]
+        },
+        "drainage": {
+          "optimal": "well (dry spells)",
+          "absolute": "well (dry spells), excessive (dry/moderately dry)"
+        }
+      },
+      "growing_days": [
+        180.0,
+        365.0
+      ],
+      "first_harvest_days": [
+        180.0,
+        365.0
+      ],
+      "water": {
+        "seasonal_mm": null,
+        "planning_growing_days": null,
+        "basis": "FAO training manual Tables 4 and 5: approximate growing period and crop evapotranspiration; not irrigation volume or annual rainfall.",
+        "source_url": null,
+        "source_date": null,
+        "retrieved_on": null
+      },
+      "image_path": "website/crops/cassava.jpg",
+      "gaez_code": "CSV",
+      "gaez_potential_code": "CASV",
+      "notes": [],
+      "source": {
+        "name": "FAO ECOCROP",
+        "record_id": 1420,
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1420",
+        "publication_date": null,
+        "retrieved_on": "2026-11-14",
+        "raw_sha256": "e1a2578d133fffbb64fa38844cfd53ae9d3909aead708d07a0a4708e5fc35dd2",
+        "database_note": "Historical FAO ECOCROP database, discontinued around 2015; source sheet is undated."
+      }
+    },
+    {
+      "slug": "arabica-coffee",
+      "name": "Arabica coffee",
+      "scientific_name": "Coffea arabica",
+      "category": "perennial",
+      "life_cycle": "perennial",
+      "requirements": {
+        "temperature_c": {
+          "optimal": [
+            14.0,
+            28.0
+          ],
+          "absolute": [
+            10.0,
+            34.0
+          ],
+          "unit": "°C"
+        },
+        "annual_rainfall_mm": {
+          "optimal": [
+            1400.0,
+            2300.0
+          ],
+          "absolute": [
+            750.0,
+            4200.0
+          ],
+          "unit": "mm/year"
+        },
+        "ph": {
+          "optimal": [
+            5.5,
+            7.0
+          ],
+          "absolute": [
+            4.3,
+            8.4
+          ],
+          "unit": "pH"
+        },
+        "elevation_m": {
+          "optimal": [
+            null,
+            null
+          ],
+          "absolute": [
+            null,
+            2800.0
+          ],
+          "unit": "m"
+        },
+        "texture": {
+          "optimal": [
+            "medium",
+            "organic"
+          ],
+          "absolute": [
+            "medium",
+            "light"
+          ]
+        },
+        "drainage": {
+          "optimal": "well (dry spells)",
+          "absolute": "well (dry spells)"
+        }
+      },
+      "growing_days": [
+        210.0,
+        330.0
+      ],
+      "first_harvest_days": null,
+      "water": {
+        "seasonal_mm": null,
+        "planning_growing_days": null,
+        "basis": "FAO training manual Tables 4 and 5: approximate growing period and crop evapotranspiration; not irrigation volume or annual rainfall.",
+        "source_url": null,
+        "source_date": null,
+        "retrieved_on": null
+      },
+      "image_path": "website/crops/arabica-coffee.jpg",
+      "gaez_code": "COF",
+      "gaez_potential_code": "COFF",
+      "notes": [
+        "GAEZ coffee is a crop group and does not distinguish Arabica and Robusta; use its result only as additional regional context."
+      ],
+      "source": {
+        "name": "FAO ECOCROP",
+        "record_id": 749,
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=749",
+        "publication_date": null,
+        "retrieved_on": "2026-11-14",
+        "raw_sha256": "48103d57e8b1fa1e01695f0176c67f63dc987eca68f6a747e4d5574031fa8fcf",
+        "database_note": "Historical FAO ECOCROP database, discontinued around 2015; source sheet is undated."
+      }
+    },
+    {
+      "slug": "robusta-coffee",
+      "name": "Robusta coffee",
+      "scientific_name": "Coffea canephora",
+      "category": "perennial",
+      "life_cycle": "perennial",
+      "requirements": {
+        "temperature_c": {
+          "optimal": [
+            20.0,
+            30.0
+          ],
+          "absolute": [
+            12.0,
+            36.0
+          ],
+          "unit": "°C"
+        },
+        "annual_rainfall_mm": {
+          "optimal": [
+            1700.0,
+            3000.0
+          ],
+          "absolute": [
+            900.0,
+            4000.0
+          ],
+          "unit": "mm/year"
+        },
+        "ph": {
+          "optimal": [
+            5.0,
+            6.3
+          ],
+          "absolute": [
+            4.0,
+            8.0
+          ],
+          "unit": "pH"
+        },
+        "elevation_m": {
+          "optimal": [
+            null,
+            null
+          ],
+          "absolute": [
+            null,
+            1300.0
+          ],
+          "unit": "m"
+        },
+        "texture": {
+          "optimal": [
+            "heavy",
+            "medium"
+          ],
+          "absolute": [
+            "heavy",
+            "medium",
+            "light"
+          ]
+        },
+        "drainage": {
+          "optimal": "well (dry spells)",
+          "absolute": "poorly (saturated >50% of year), well (dry spells)"
+        }
+      },
+      "growing_days": [
+        270.0,
+        300.0
+      ],
+      "first_harvest_days": null,
+      "water": {
+        "seasonal_mm": null,
+        "planning_growing_days": null,
+        "basis": "FAO training manual Tables 4 and 5: approximate growing period and crop evapotranspiration; not irrigation volume or annual rainfall.",
+        "source_url": null,
+        "source_date": null,
+        "retrieved_on": null
+      },
+      "image_path": "website/crops/robusta-coffee.jpg",
+      "gaez_code": "COF",
+      "gaez_potential_code": "COFF",
+      "notes": [
+        "GAEZ coffee is a crop group and does not distinguish Arabica and Robusta; use its result only as additional regional context."
+      ],
+      "source": {
+        "name": "FAO ECOCROP",
+        "record_id": 750,
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=750",
+        "publication_date": null,
+        "retrieved_on": "2026-11-14",
+        "raw_sha256": "5948bfc2eb61fff9272860f472f86060acca2ed338e2e4b65ae38c40f7f8d6d0",
+        "database_note": "Historical FAO ECOCROP database, discontinued around 2015; source sheet is undated."
+      }
+    },
+    {
+      "slug": "banana",
+      "name": "Banana",
+      "scientific_name": "Musa acuminata",
+      "category": "perennial",
+      "life_cycle": "perennial",
+      "requirements": {
+        "temperature_c": {
+          "optimal": [
+            23.0,
+            33.0
+          ],
+          "absolute": [
+            12.0,
+            42.0
+          ],
+          "unit": "°C"
+        },
+        "annual_rainfall_mm": {
+          "optimal": [
+            1200.0,
+            3600.0
+          ],
+          "absolute": [
+            650.0,
+            5000.0
+          ],
+          "unit": "mm/year"
+        },
+        "ph": {
+          "optimal": [
+            5.5,
+            7.5
+          ],
+          "absolute": [
+            4.0,
+            8.4
+          ],
+          "unit": "pH"
+        },
+        "elevation_m": {
+          "optimal": [
+            null,
+            null
+          ],
+          "absolute": [
+            null,
+            2400.0
+          ],
+          "unit": "m"
+        },
+        "texture": {
+          "optimal": [
+            "medium",
+            "organic"
+          ],
+          "absolute": [
+            "heavy",
+            "medium",
+            "light"
+          ]
+        },
+        "drainage": {
+          "optimal": "well (dry spells)",
+          "absolute": "well (dry spells)"
+        }
+      },
+      "growing_days": [
+        180.0,
+        365.0
+      ],
+      "first_harvest_days": null,
+      "water": {
+        "seasonal_mm": [
+          1200,
+          2200
+        ],
+        "planning_growing_days": [
+          300,
+          365
+        ],
+        "basis": "FAO training manual Tables 4 and 5: approximate growing period and crop evapotranspiration; not irrigation volume or annual rainfall.",
+        "source_url": "https://www.fao.org/4/s2022e/s2022e02.htm",
+        "source_date": null,
+        "retrieved_on": "2026-11-14"
+      },
+      "image_path": "website/crops/banana.jpg",
+      "gaez_code": "BAN",
+      "gaez_potential_code": "BANA",
+      "notes": [
+        "EcoCrop record is Musa acuminata; requirements can differ for other banana species and cultivars."
+      ],
+      "source": {
+        "name": "FAO ECOCROP",
+        "record_id": 7848,
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=7848",
+        "publication_date": null,
+        "retrieved_on": "2026-11-14",
+        "raw_sha256": "55755752af01e85f8e2d7d98c4df3f21c89d1abe1f4f2632a6581da9eb3097d0",
+        "database_note": "Historical FAO ECOCROP database, discontinued around 2015; source sheet is undated."
+      }
+    },
+    {
+      "slug": "peanut",
+      "name": "Peanut",
+      "scientific_name": "Arachis hypogaea",
+      "category": "legume",
+      "life_cycle": "annual crop use",
+      "requirements": {
+        "temperature_c": {
+          "optimal": [
+            22.0,
+            32.0
+          ],
+          "absolute": [
+            10.0,
+            45.0
+          ],
+          "unit": "°C"
+        },
+        "annual_rainfall_mm": {
+          "optimal": [
+            600.0,
+            1500.0
+          ],
+          "absolute": [
+            400.0,
+            4000.0
+          ],
+          "unit": "mm/year"
+        },
+        "ph": {
+          "optimal": [
+            5.5,
+            6.5
+          ],
+          "absolute": [
+            4.5,
+            8.5
+          ],
+          "unit": "pH"
+        },
+        "elevation_m": {
+          "optimal": [
+            null,
+            null
+          ],
+          "absolute": [
+            null,
+            1650.0
+          ],
+          "unit": "m"
+        },
+        "texture": {
+          "optimal": [
+            "medium"
+          ],
+          "absolute": [
+            "heavy",
+            "medium",
+            "light",
+            "organic"
+          ]
+        },
+        "drainage": {
+          "optimal": "well (dry spells)",
+          "absolute": "well (dry spells)"
+        }
+      },
+      "growing_days": [
+        90.0,
+        150.0
+      ],
+      "first_harvest_days": [
+        90.0,
+        150.0
+      ],
+      "water": {
+        "seasonal_mm": [
+          500,
+          700
+        ],
+        "planning_growing_days": [
+          130,
+          140
+        ],
+        "basis": "FAO training manual Tables 4 and 5: approximate growing period and crop evapotranspiration; not irrigation volume or annual rainfall.",
+        "source_url": "https://www.fao.org/4/s2022e/s2022e02.htm",
+        "source_date": null,
+        "retrieved_on": "2026-11-14"
+      },
+      "image_path": "website/crops/peanut.jpg",
+      "gaez_code": "GRD",
+      "gaez_potential_code": "GRND",
+      "notes": [],
+      "source": {
+        "name": "FAO ECOCROP",
+        "record_id": 2199,
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=2199",
+        "publication_date": null,
+        "retrieved_on": "2026-11-14",
+        "raw_sha256": "fc99ce99d40be5ef2b89d5c391e740fde7501ef68ae0ed3e14e54da782e07956",
+        "database_note": "Historical FAO ECOCROP database, discontinued around 2015; source sheet is undated."
+      }
+    },
+    {
+      "slug": "soybean",
+      "name": "Soybean",
+      "scientific_name": "Glycine max",
+      "category": "legume",
+      "life_cycle": "annual crop use",
+      "requirements": {
+        "temperature_c": {
+          "optimal": [
+            20.0,
+            33.0
+          ],
+          "absolute": [
+            10.0,
+            38.0
+          ],
+          "unit": "°C"
+        },
+        "annual_rainfall_mm": {
+          "optimal": [
+            600.0,
+            1500.0
+          ],
+          "absolute": [
+            450.0,
+            1800.0
+          ],
+          "unit": "mm/year"
+        },
+        "ph": {
+          "optimal": [
+            5.5,
+            6.5
+          ],
+          "absolute": [
+            4.5,
+            8.4
+          ],
+          "unit": "pH"
+        },
+        "elevation_m": {
+          "optimal": [
+            null,
+            null
+          ],
+          "absolute": [
+            null,
+            3000.0
+          ],
+          "unit": "m"
+        },
+        "texture": {
+          "optimal": [
+            "medium",
+            "organic"
+          ],
+          "absolute": [
+            "heavy",
+            "medium",
+            "light"
+          ]
+        },
+        "drainage": {
+          "optimal": "well (dry spells)",
+          "absolute": "poorly (saturated >50% of year), well (dry spells), excessive (dry/moderately dry)"
+        }
+      },
+      "growing_days": [
+        75.0,
+        180.0
+      ],
+      "first_harvest_days": [
+        75.0,
+        180.0
+      ],
+      "water": {
+        "seasonal_mm": [
+          450,
+          700
+        ],
+        "planning_growing_days": [
+          135,
+          150
+        ],
+        "basis": "FAO training manual Tables 4 and 5: approximate growing period and crop evapotranspiration; not irrigation volume or annual rainfall.",
+        "source_url": "https://www.fao.org/4/s2022e/s2022e02.htm",
+        "source_date": null,
+        "retrieved_on": "2026-11-14"
+      },
+      "image_path": "website/crops/soybean.jpg",
+      "gaez_code": "SOY",
+      "gaez_potential_code": "SOYB",
+      "notes": [],
+      "source": {
+        "name": "FAO ECOCROP",
+        "record_id": 1150,
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1150",
+        "publication_date": null,
+        "retrieved_on": "2026-11-14",
+        "raw_sha256": "a78789773709a0c3ba7789365bd399b8b84027b54bce17479535257d97bf8094",
+        "database_note": "Historical FAO ECOCROP database, discontinued around 2015; source sheet is undated."
+      }
+    },
+    {
+      "slug": "mung-bean",
+      "name": "Mung bean",
+      "scientific_name": "Vigna radiata",
+      "category": "legume",
+      "life_cycle": "annual crop use",
+      "requirements": {
+        "temperature_c": {
+          "optimal": [
+            21.0,
+            36.0
+          ],
+          "absolute": [
+            8.0,
+            40.0
+          ],
+          "unit": "°C"
+        },
+        "annual_rainfall_mm": {
+          "optimal": [
+            650.0,
+            900.0
+          ],
+          "absolute": [
+            500.0,
+            1250.0
+          ],
+          "unit": "mm/year"
+        },
+        "ph": {
+          "optimal": [
+            5.5,
+            6.2
+          ],
+          "absolute": [
+            4.3,
+            8.3
+          ],
+          "unit": "pH"
+        },
+        "elevation_m": {
+          "optimal": [
+            null,
+            null
+          ],
+          "absolute": [
+            null,
+            2000.0
+          ],
+          "unit": "m"
+        },
+        "texture": {
+          "optimal": [
+            "medium",
+            "organic"
+          ],
+          "absolute": [
+            "heavy",
+            "medium",
+            "light"
+          ]
+        },
+        "drainage": {
+          "optimal": "well (dry spells)",
+          "absolute": "well (dry spells), excessive (dry/moderately dry)"
+        }
+      },
+      "growing_days": [
+        50.0,
+        120.0
+      ],
+      "first_harvest_days": [
+        50.0,
+        120.0
+      ],
+      "water": {
+        "seasonal_mm": null,
+        "planning_growing_days": null,
+        "basis": "FAO training manual Tables 4 and 5: approximate growing period and crop evapotranspiration; not irrigation volume or annual rainfall.",
+        "source_url": null,
+        "source_date": null,
+        "retrieved_on": null
+      },
+      "image_path": "website/crops/mung-bean.jpg",
+      "gaez_code": null,
+      "gaez_potential_code": null,
+      "notes": [],
+      "source": {
+        "name": "FAO ECOCROP",
+        "record_id": 2150,
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=2150",
+        "publication_date": null,
+        "retrieved_on": "2026-11-14",
+        "raw_sha256": "772f2edbece09d0ca0a641396c73a5b70ed52dea6fd78671ac8e2810d529254c",
+        "database_note": "Historical FAO ECOCROP database, discontinued around 2015; source sheet is undated."
+      }
+    },
+    {
+      "slug": "tomato",
+      "name": "Tomato",
+      "scientific_name": "Lycopersicon esculentum",
+      "category": "vegetable",
+      "life_cycle": "annual crop use",
+      "requirements": {
+        "temperature_c": {
+          "optimal": [
+            20.0,
+            27.0
+          ],
+          "absolute": [
+            7.0,
+            35.0
+          ],
+          "unit": "°C"
+        },
+        "annual_rainfall_mm": {
+          "optimal": [
+            600.0,
+            1300.0
+          ],
+          "absolute": [
+            400.0,
+            1800.0
+          ],
+          "unit": "mm/year"
+        },
+        "ph": {
+          "optimal": [
+            5.5,
+            6.8
+          ],
+          "absolute": [
+            5.0,
+            7.5
+          ],
+          "unit": "pH"
+        },
+        "elevation_m": {
+          "optimal": [
+            null,
+            null
+          ],
+          "absolute": [
+            null,
+            2400.0
+          ],
+          "unit": "m"
+        },
+        "texture": {
+          "optimal": [
+            "medium",
+            "organic"
+          ],
+          "absolute": [
+            "heavy",
+            "medium",
+            "light"
+          ]
+        },
+        "drainage": {
+          "optimal": "well (dry spells)",
+          "absolute": "well (dry spells)"
+        }
+      },
+      "growing_days": [
+        70.0,
+        150.0
+      ],
+      "first_harvest_days": [
+        70.0,
+        150.0
+      ],
+      "water": {
+        "seasonal_mm": [
+          400,
+          800
+        ],
+        "planning_growing_days": [
+          135,
+          180
+        ],
+        "basis": "FAO training manual Tables 4 and 5: approximate growing period and crop evapotranspiration; not irrigation volume or annual rainfall.",
+        "source_url": "https://www.fao.org/4/s2022e/s2022e02.htm",
+        "source_date": null,
+        "retrieved_on": "2026-11-14"
+      },
+      "image_path": "website/crops/tomato.jpg",
+      "gaez_code": "TOM",
+      "gaez_potential_code": "TOMA",
+      "notes": [],
+      "source": {
+        "name": "FAO ECOCROP",
+        "record_id": 1379,
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=1379",
+        "publication_date": null,
+        "retrieved_on": "2026-11-14",
+        "raw_sha256": "d2502bb87e491bf5e4a09f96ae942b35f04454e5ac0664b3d6dfd8aa1052aa7d",
+        "database_note": "Historical FAO ECOCROP database, discontinued around 2015; source sheet is undated."
+      }
+    },
+    {
+      "slug": "cabbage",
+      "name": "Cabbage",
+      "scientific_name": "Brassica oleracea var. capitata",
+      "category": "vegetable",
+      "life_cycle": "annual crop use",
+      "requirements": {
+        "temperature_c": {
+          "optimal": [
+            15.0,
+            24.0
+          ],
+          "absolute": [
+            7.0,
+            32.0
+          ],
+          "unit": "°C"
+        },
+        "annual_rainfall_mm": {
+          "optimal": [
+            500.0,
+            1000.0
+          ],
+          "absolute": [
+            300.0,
+            2500.0
+          ],
+          "unit": "mm/year"
+        },
+        "ph": {
+          "optimal": [
+            6.0,
+            7.5
+          ],
+          "absolute": [
+            5.0,
+            8.3
+          ],
+          "unit": "pH"
+        },
+        "elevation_m": {
+          "optimal": [
+            null,
+            null
+          ],
+          "absolute": [
+            null,
+            2000.0
+          ],
+          "unit": "m"
+        },
+        "texture": {
+          "optimal": [
+            "medium",
+            "organic"
+          ],
+          "absolute": [
+            "heavy",
+            "medium",
+            "light"
+          ]
+        },
+        "drainage": {
+          "optimal": "well (dry spells)",
+          "absolute": "well (dry spells)"
+        }
+      },
+      "growing_days": [
+        60.0,
+        200.0
+      ],
+      "first_harvest_days": [
+        60.0,
+        200.0
+      ],
+      "water": {
+        "seasonal_mm": [
+          350,
+          500
+        ],
+        "planning_growing_days": [
+          120,
+          140
+        ],
+        "basis": "FAO training manual Tables 4 and 5: approximate growing period and crop evapotranspiration; not irrigation volume or annual rainfall.",
+        "source_url": "https://www.fao.org/4/s2022e/s2022e02.htm",
+        "source_date": null,
+        "retrieved_on": "2026-11-14"
+      },
+      "image_path": "website/crops/cabbage.jpg",
+      "gaez_code": "CAB",
+      "gaez_potential_code": "CABB",
+      "notes": [],
+      "source": {
+        "name": "FAO ECOCROP",
+        "record_id": 554,
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=554",
+        "publication_date": null,
+        "retrieved_on": "2026-11-14",
+        "raw_sha256": "6ed3b24f1e33bcf408965bbdc16e805e41dd8e11f76cdb34f10613acdd479b9d",
+        "database_note": "Historical FAO ECOCROP database, discontinued around 2015; source sheet is undated."
+      }
+    },
+    {
+      "slug": "cucumber",
+      "name": "Cucumber",
+      "scientific_name": "Cucumis sativus",
+      "category": "vegetable",
+      "life_cycle": "annual crop use",
+      "requirements": {
+        "temperature_c": {
+          "optimal": [
+            18.0,
+            32.0
+          ],
+          "absolute": [
+            6.0,
+            38.0
+          ],
+          "unit": "°C"
+        },
+        "annual_rainfall_mm": {
+          "optimal": [
+            1000.0,
+            1200.0
+          ],
+          "absolute": [
+            400.0,
+            4300.0
+          ],
+          "unit": "mm/year"
+        },
+        "ph": {
+          "optimal": [
+            6.0,
+            7.5
+          ],
+          "absolute": [
+            4.5,
+            8.7
+          ],
+          "unit": "pH"
+        },
+        "elevation_m": {
+          "optimal": [
+            null,
+            null
+          ],
+          "absolute": [
+            null,
+            2000.0
+          ],
+          "unit": "m"
+        },
+        "texture": {
+          "optimal": [
+            "medium",
+            "organic"
+          ],
+          "absolute": [
+            "heavy",
+            "medium",
+            "light"
+          ]
+        },
+        "drainage": {
+          "optimal": "well (dry spells)",
+          "absolute": "well (dry spells)"
+        }
+      },
+      "growing_days": [
+        40.0,
+        180.0
+      ],
+      "first_harvest_days": [
+        40.0,
+        180.0
+      ],
+      "water": {
+        "seasonal_mm": null,
+        "planning_growing_days": [
+          105,
+          130
+        ],
+        "basis": "FAO training manual Tables 4 and 5: approximate growing period and crop evapotranspiration; not irrigation volume or annual rainfall.",
+        "source_url": null,
+        "source_date": null,
+        "retrieved_on": null
+      },
+      "image_path": "website/crops/cucumber.jpg",
+      "gaez_code": null,
+      "gaez_potential_code": null,
+      "notes": [],
+      "source": {
+        "name": "FAO ECOCROP",
+        "record_id": 817,
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=817",
+        "publication_date": null,
+        "retrieved_on": "2026-11-14",
+        "raw_sha256": "9b78b4074f8c33a0c73ddc50d372714c34bcb627269111778bd3c2c36e232d98",
+        "database_note": "Historical FAO ECOCROP database, discontinued around 2015; source sheet is undated."
+      }
+    },
+    {
+      "slug": "chilli",
+      "name": "Chilli pepper",
+      "scientific_name": "Capsicum annuum",
+      "category": "vegetable",
+      "life_cycle": "annual crop use",
+      "requirements": {
+        "temperature_c": {
+          "optimal": [
+            17.0,
+            30.0
+          ],
+          "absolute": [
+            8.0,
+            35.0
+          ],
+          "unit": "°C"
+        },
+        "annual_rainfall_mm": {
+          "optimal": [
+            600.0,
+            1250.0
+          ],
+          "absolute": [
+            500.0,
+            1700.0
+          ],
+          "unit": "mm/year"
+        },
+        "ph": {
+          "optimal": [
+            5.5,
+            6.8
+          ],
+          "absolute": [
+            4.5,
+            7.0
+          ],
+          "unit": "pH"
+        },
+        "elevation_m": {
+          "optimal": [
+            null,
+            null
+          ],
+          "absolute": [
+            null,
+            3000.0
+          ],
+          "unit": "m"
+        },
+        "texture": {
+          "optimal": [
+            "medium",
+            "organic"
+          ],
+          "absolute": [
+            "medium",
+            "light"
+          ]
+        },
+        "drainage": {
+          "optimal": "well (dry spells)",
+          "absolute": "well (dry spells)"
+        }
+      },
+      "growing_days": [
+        60.0,
+        180.0
+      ],
+      "first_harvest_days": [
+        60.0,
+        180.0
+      ],
+      "water": {
+        "seasonal_mm": [
+          600,
+          900
+        ],
+        "planning_growing_days": [
+          120,
+          210
+        ],
+        "basis": "FAO training manual Tables 4 and 5: approximate growing period and crop evapotranspiration; not irrigation volume or annual rainfall.",
+        "source_url": "https://www.fao.org/4/s2022e/s2022e02.htm",
+        "source_date": null,
+        "retrieved_on": "2026-11-14"
+      },
+      "image_path": "website/crops/chilli.jpg",
+      "gaez_code": null,
+      "gaez_potential_code": null,
+      "notes": [],
+      "source": {
+        "name": "FAO ECOCROP",
+        "record_id": 618,
+        "url": "https://ecocrop.apps.fao.org/ecocrop/srv/en/dataSheet?id=618",
+        "publication_date": null,
+        "retrieved_on": "2026-11-14",
+        "raw_sha256": "46ad22b842af7f043705ce9db512250dca5552d24e30ad716ad50dcef3f41ce8",
+        "database_note": "Historical FAO ECOCROP database, discontinued around 2015; source sheet is undated."
+      }
+    }
+  ]
+}

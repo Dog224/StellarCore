@@ -1,0 +1,1 @@
+/* Vegetation monitoring has been removed. No satellite requests are made. */

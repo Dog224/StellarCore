@@ -1,0 +1,20 @@
+{% load static %}
+<aside class="home-side-column" aria-label="Field conditions">
+  <section class="home-weather-card" aria-labelledby="home-weather-heading" id="home-conditions" aria-busy="false">
+    <div class="home-card-title"><h2 id="home-weather-heading">Weather</h2><span class="home-model-tag">Model estimate</span></div>
+    <div class="home-weather-main"><svg class="icon" aria-hidden="true"><use href="{% static 'website/icons.svg' %}#weather"></use></svg><div><strong id="home-temperature" data-no-translate>&mdash;</strong><p id="home-weather-description">Choose a field pin</p></div></div>
+    <dl class="home-weather-facts"><div><dt id="home-wind-label">Wind (10 m)</dt><dd id="home-wind" data-no-translate>&mdash;</dd></div><div><dt>Humidity</dt><dd id="home-humidity" data-no-translate>&mdash;</dd></div></dl>
+    <p class="home-source-note"><a id="home-weather-source" href="https://open-meteo.com/" target="_blank" rel="noopener" data-no-translate>Open-Meteo</a> &middot; <time id="home-weather-time" data-no-translate></time></p>
+    <button type="button" id="home-weather-retry" class="home-weather-retry" disabled>Retry current weather</button>
+  </section>
+  <section class="home-risk-card" aria-labelledby="home-risk-heading">
+    <div class="home-card-title"><span class="home-alert-icon"><svg class="icon" aria-hidden="true"><use href="{% static 'website/icons.svg' %}#alert"></use></svg></span><h2 id="home-risk-heading">Farm risk alerts</h2></div>
+    <p class="home-risk-intro">A quick look at rain and air.</p>
+    <div class="home-risk-grid"><div class="home-risk-item"><span class="home-risk-label">Dry days</span><strong id="home-dry-days" data-no-translate>&mdash;</strong><small id="home-dry-period">In the last 7 days</small></div><div class="home-risk-item"><span class="home-risk-label" data-no-translate>PM2.5</span><strong id="home-pm25" data-no-translate>&mdash;</strong><small data-no-translate>&micro;g/m&sup3;</small><small id="home-air-level">Not checked</small></div></div>
+    <p class="home-risk-note">Regional estimates. Check your field.</p>
+    <button type="button" class="home-explore-button" data-dialog="alerts-dialog"><span>Explore alerts</span><span aria-hidden="true">&#8594;</span></button>
+    <p class="home-air-source"><a href="https://open-meteo.com/en/docs/air-quality-api" target="_blank" rel="noopener" data-no-translate>Open-Meteo</a> / <a href="https://ads.atmosphere.copernicus.eu/datasets/cams-global-atmospheric-composition-forecasts" target="_blank" rel="noopener" data-no-translate>CAMS</a> &middot; <span>model data</span></p>
+  </section>
+  <div class="home-map-tip"><svg class="icon" aria-hidden="true"><use href="{% static 'website/icons.svg' %}#map"></use></svg><p>Tap your field, then press View results.</p></div>
+  <p id="home-conditions-status" class="home-conditions-status" role="status" aria-live="polite">Save a pin to see local conditions.</p>
+</aside>

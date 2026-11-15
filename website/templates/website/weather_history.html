@@ -1,0 +1,35 @@
+{% load static %}
+<section class="weather-history" id="weather-history" aria-busy="false" aria-labelledby="history-heading">
+  <div class="history-intro">
+    <div class="place-card" id="place-card" aria-labelledby="history-heading" aria-busy="false">
+      <div class="history-scene">
+        <div class="place-photo-wrap" id="place-photo-wrap" hidden><img id="place-photo" width="900" height="480" alt="" referrerpolicy="no-referrer" decoding="async"></div>
+        <div class="history-summary"><p class="eyebrow">YOUR FIELD · WEATHER RECORD</p><h2 id="history-heading">Rain, temperature &amp; your soil</h2><p>See what happened before you plan what comes next.</p><p class="history-pin" id="history-pin" data-no-translate hidden></p></div>
+      </div>
+      <div class="history-location">
+        <div class="place-thumbnail-wrap" id="place-thumbnail-wrap" hidden aria-hidden="true"><img id="place-thumbnail" width="900" height="480" alt="" referrerpolicy="no-referrer" decoding="async"></div>
+        <div class="place-card-body history-area-details"><p class="place-kicker"><svg class="icon" aria-hidden="true"><use href="{% static 'website/icons.svg' %}#map"></use></svg><span>Selected area</span></p><h3 id="place-name" data-no-translate></h3><p id="place-coordinates" data-no-translate></p><p id="place-status" role="status">Open Weather &amp; soil to see this area.</p><div id="place-photo-credit" hidden></div><p class="place-source" id="place-source"></p></div>
+      </div>
+    </div>
+  </div>
+  <div class="history-toolbar"><div class="history-periods" role="group" aria-label="Weather history period"><button type="button" data-history-period="100d" aria-pressed="true">100 days</button><button type="button" data-history-period="1y" aria-pressed="false">1 year</button><button type="button" data-history-period="5y" aria-pressed="false">5 years</button><button type="button" data-history-period="10y" aria-pressed="false">10 years</button></div><button type="button" id="history-refresh" class="text-button">Reload history</button></div>
+  <p id="history-status" class="history-status" role="status" aria-live="polite">Open Weather &amp; soil to load the history for your saved pin.</p>
+  <div id="history-content" hidden>
+    <div class="history-period-note"><strong id="history-period" data-no-translate></strong><span id="history-period-note"></span></div>
+    <p class="history-warning" id="history-warning" role="status" hidden></p>
+    <div class="history-metrics" id="history-metrics"></div>
+    <p class="data-note history-soil-explainer" id="history-soil-label"></p>
+    <section class="history-chart-card" aria-labelledby="history-chart-title">
+      <div class="history-chart-heading"><h3 id="history-chart-title">Rainfall pattern</h3><span id="history-chart-unit" data-no-translate></span></div>
+      <div class="history-variables" role="group" aria-label="Weather measurement"><button type="button" data-history-variable="rain" aria-pressed="true">Rainfall</button><button type="button" data-history-variable="temperature" aria-pressed="false">Temperature</button><button type="button" data-history-variable="wind" aria-pressed="false">Wind speed</button><button type="button" data-history-variable="soil" aria-pressed="false">Soil moisture</button></div>
+      <div class="history-chart" id="history-chart"></div><div class="history-chart-legend" id="history-chart-legend"></div>
+      <label class="history-scrubber"><span>Explore a date</span><input id="history-date-slider" type="range" min="0" max="0" value="0" aria-label="Explore weather history by date"></label>
+      <output id="history-chart-reading" class="history-chart-reading" aria-live="polite"></output>
+      <p id="history-chart-note" class="data-note"></p>
+    </section>
+    <section class="history-patterns" aria-labelledby="history-pattern-title"><h3 id="history-pattern-title">What the records show</h3><div id="history-patterns" class="history-pattern-grid"></div></section>
+    <details class="history-extra"><summary>Rain by month and year</summary><p class="data-note">Compare complete calendar years. Missing rainfall is never counted as zero.</p><div id="history-seasonality"></div><div class="weather-table-wrap"><table class="weather-table"><thead><tr><th>Year</th><th>Rainfall mm</th><th>Average °C</th><th>Wind m/s</th><th>Rain data coverage</th></tr></thead><tbody id="history-years"></tbody></table></div></details>
+    <details class="history-extra" id="history-daily-details"><summary>Daily readings and download</summary><div class="history-download"><p>Daily values use UTC dates.</p><button type="button" class="green-button" id="history-download">Download CSV</button></div><div class="weather-table-wrap"><table class="weather-table"><thead><tr><th>Date (UTC)</th><th>Rain mm</th><th>Average °C</th><th>High °C</th><th>Low °C</th><th>Wind m/s</th><th>Humidity %</th><th>Surface soil</th><th>Root-zone soil</th></tr></thead><tbody id="history-days"></tbody></table></div><button type="button" id="history-more" class="text-button">Show 50 more days</button></details>
+    <details class="history-extra"><summary>Sources, dates and missing data</summary><div id="history-sources"></div><p class="data-note">These are regional estimates, not measurements at your exact field. Nearby pins can share a weather grid cell. Wind is the daily mean at 2 metres, not a gust forecast.</p><p class="data-note" id="history-soil-method"></p><p class="data-note">Historical patterns are not a weather forecast or proof of soil fertility. A difference between two periods does not establish a long-term climate trend.</p></details>
+  </div>
+</section>

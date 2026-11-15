@@ -1,0 +1,17 @@
+<dialog id="alerts-dialog" class="home-info-dialog" aria-labelledby="alerts-heading">
+  <div class="dialog-heading"><div><p class="eyebrow">YOUR FIELD</p><h2 id="alerts-heading">Farm risk alerts</h2></div><button type="button" data-close aria-label="Close">&times;</button></div>
+  <p class="home-dialog-intro">Rain and air estimates for your saved pin.</p><p id="alerts-pin" class="home-dialog-pin" data-no-translate></p>
+  <section class="alert-detail"><h3>Recent rain</h3><strong id="alerts-rain" data-no-translate>&mdash;</strong><p id="alerts-rain-period" data-no-translate></p><p>A dry day has less than 1 mm of modelled rain. This count is not a drought probability or an irrigation prescription.</p></section>
+  <section class="alert-detail"><h3>Air quality</h3><strong id="alerts-air" data-no-translate>&mdash;</strong><p id="alerts-air-level"></p><p id="alerts-air-time" data-no-translate></p><p>PM2.5 and US AQI are regional CAMS model estimates, approximately 45 km per grid cell. They are not readings from a sensor at your farm.</p></section>
+  <p class="home-dialog-source"><a href="https://open-meteo.com/en/docs" target="_blank" rel="noopener">Open-Meteo weather</a> &middot; <a href="https://open-meteo.com/en/docs/air-quality-api" target="_blank" rel="noopener">Open-Meteo / CAMS air quality</a></p>
+  <button type="button" class="green-button" data-home-results="weather">View weather history &#8594;</button>
+</dialog>
+{% include 'website/market.html' %}
+<dialog id="help-dialog" class="home-info-dialog" aria-labelledby="help-heading">
+  <div class="dialog-heading"><div><p class="eyebrow">HERE TO HELP</p><h2 id="help-heading">Farm help</h2></div><button type="button" data-close aria-label="Close">&times;</button></div>
+  <p class="home-dialog-intro">Choose a question to get started.</p>
+  <details class="home-help-question"><summary>How do I check my field?</summary><p>Tap your field on the map, then press the yellow View results button. This saves the pin and opens crops, weather and your plan.</p></details>
+  <details class="home-help-question"><summary>What does a crop score mean?</summary><p>A score compares published crop requirements with available conditions for the selected area. Soil tests and local advice are still needed before planting.</p></details>
+  <details class="home-help-question"><summary>Where is my crop rotation?</summary><p>Open Crop, then choose View crop rotation. Edit the saved rotation in Field settings.</p></details>
+  <details class="home-help-question"><summary>Do I need an account?</summary><p>You can explore as a guest. Sign in to keep a separate field and calendar. Your profile button lets you view your account or sign out.</p></details>
+</dialog>

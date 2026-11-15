@@ -1,0 +1,212 @@
+{
+  "status": "ok",
+  "base": "USD",
+  "rates": {
+    "USD": 1.0,
+    "LAK": 22412.0,
+    "THB": 33.85
+  },
+  "dates": {
+    "LAK": "2026-11-15",
+    "THB": "2026-11-15"
+  },
+  "providers": {
+    "LAK": [
+      {
+        "key": "BDI",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "BI",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "CBKKW",
+        "date": "2026-11-15"
+      },
+      {
+        "key": "CBU",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "NBC",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "NBP",
+        "date": "2026-11-10"
+      }
+    ],
+    "THB": [
+      {
+        "key": "BCEAO",
+        "date": "2026-11-12"
+      },
+      {
+        "key": "BDI",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "BI",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "BNA",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "BNM",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "BNR",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "BOC",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "BOE",
+        "date": "2026-11-12"
+      },
+      {
+        "key": "BOM",
+        "date": "2026-11-10"
+      },
+      {
+        "key": "BOT",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "CBG",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "CBKKW",
+        "date": "2026-11-15"
+      },
+      {
+        "key": "CBM",
+        "date": "2026-11-12"
+      },
+      {
+        "key": "CBO",
+        "date": "2026-11-12"
+      },
+      {
+        "key": "CBR",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "CBSL",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "CBU",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "CFETS",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "CNB",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "DNB",
+        "date": "2026-11-12"
+      },
+      {
+        "key": "ECB",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "FRED",
+        "date": "2026-11-06"
+      },
+      {
+        "key": "IMF",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "LB",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "MAS",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "MNB",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "NB",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "NBC",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "NBK",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "NBKR",
+        "date": "2026-11-07"
+      },
+      {
+        "key": "NBP",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "NBRM",
+        "date": "2026-11-14"
+      },
+      {
+        "key": "NBT",
+        "date": "2026-11-15"
+      },
+      {
+        "key": "NBU",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "NRB",
+        "date": "2026-11-15"
+      },
+      {
+        "key": "RB",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "RBA",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "RBM",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "SAMA",
+        "date": "2026-11-15"
+      },
+      {
+        "key": "SARB",
+        "date": "2026-11-13"
+      },
+      {
+        "key": "SBI",
+        "date": "2026-11-13"
+      }
+    ]
+  },
+  "fetched_at": "2026-11-15T07:30:05.140632+00:00",
+  "source": "Frankfurter blended reference rates",
+  "source_url": "https://frankfurter.dev/",
+  "endpoint": "https://api.frankfurter.dev/v2/rates?base=USD&quotes=LAK,THB&expand=providers",
+  "note": "Reference conversion only. Bank, cash and transfer rates may differ."
+}

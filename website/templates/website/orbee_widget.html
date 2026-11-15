@@ -1,0 +1,6 @@
+{% if workspace_page != 'orbee' %}
+<aside id="orbee-widget" class="orbee-widget" aria-label="Orbee farm help">
+  {% include 'website/orbee_chat.html' %}
+  <button type="button" id="orbee-launcher" class="orbee-launcher" aria-label="Chat with Orbee" aria-expanded="false" aria-controls="orbee-chat"><span class="orbee-launcher-label">Ask Orbee<span aria-hidden="true"> &#8599;</span></span><span class="orbee-launcher-mascot orbee-sprite" aria-hidden="true"></span></button>
+</aside>
+{% endif %}

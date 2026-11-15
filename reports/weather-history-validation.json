@@ -1,0 +1,1341 @@
+{
+  "validated_at": "2026-11-15T02:53:17.949487+00:00",
+  "source": "Live NASA POWER requests; no fixtures and no database writes",
+  "results": [
+    {
+      "place": "Vientiane",
+      "latitude": 18,
+      "longitude": 102.6,
+      "period": "100d",
+      "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CWS2M%2CRH2M%2CIMERG_PRECTOT%2CSFMC%2CRZMC%2CGWETTOP%2CGWETROOT&community=AG&latitude=18.0&longitude=102.6&start=20260806&end=20261113&format=JSON&time-standard=UTC",
+      "source_products": [
+        "MERRA2",
+        "GEOSIT",
+        "IMERG",
+        "POWER"
+      ],
+      "fetched_at": "2026-11-15T02:53:14.378577+00:00",
+      "requested_start": "2026-08-06",
+      "requested_end": "2026-11-13",
+      "coverage": {
+        "rainfall_mm": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "PRECTOTCORR",
+          "source_units": "mm/day"
+        },
+        "temperature_c": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "T2M",
+          "source_units": "C"
+        },
+        "maximum_c": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "T2M_MAX",
+          "source_units": "C"
+        },
+        "minimum_c": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "T2M_MIN",
+          "source_units": "C"
+        },
+        "wind_ms": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "WS2M",
+          "source_units": "m/s"
+        },
+        "humidity_percent": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "RH2M",
+          "source_units": "%"
+        },
+        "soil_surface": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "GWETTOP",
+          "source_units": "1"
+        },
+        "soil_root": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "GWETROOT",
+          "source_units": "1"
+        }
+      },
+      "summary": {
+        "rainfall_mm": 435.72,
+        "observed_rainfall_mm": 435.72,
+        "rain_valid_days": 100,
+        "days": 100,
+        "rainy_days": 66,
+        "temperature_c": 26.615,
+        "maximum_c": 30.799,
+        "minimum_c": 23.198,
+        "wind_ms": 1.354,
+        "humidity_percent": 83.001,
+        "soil_surface": 0.724,
+        "soil_root": 0.706,
+        "rainy_day_frequency_percent": 66.0,
+        "longest_observed_dry_spell_days": 6,
+        "hottest_day": {
+          "date": "2026-08-17",
+          "rainfall_mm": 1.3,
+          "temperature_c": 28.79,
+          "maximum_c": 34.4,
+          "minimum_c": 24.56,
+          "wind_ms": 2.44,
+          "humidity_percent": 75.79,
+          "soil_surface": 0.62,
+          "soil_root": 0.6
+        },
+        "coldest_day": {
+          "date": "2026-11-10",
+          "rainfall_mm": 0.0,
+          "temperature_c": 19.06,
+          "maximum_c": 23.64,
+          "minimum_c": 15.29,
+          "wind_ms": 1.73,
+          "humidity_percent": 77.03,
+          "soil_surface": 0.7,
+          "soil_root": 0.74
+        },
+        "wettest_day": {
+          "date": "2026-08-18",
+          "rainfall_mm": 28.99,
+          "temperature_c": 27.7,
+          "maximum_c": 31.56,
+          "minimum_c": 25.15,
+          "wind_ms": 2.16,
+          "humidity_percent": 84.11,
+          "soil_surface": 0.71,
+          "soil_root": 0.61
+        },
+        "latest_soil": {
+          "date": "2026-11-13",
+          "rainfall_mm": 0.04,
+          "temperature_c": 24.36,
+          "maximum_c": 28.37,
+          "minimum_c": 20.08,
+          "wind_ms": 0.58,
+          "humidity_percent": 78.91,
+          "soil_surface": 0.7,
+          "soil_root": 0.73
+        }
+      },
+      "changes": {
+        "earlier_start": "2026-08-06",
+        "earlier_end": "2026-09-24",
+        "later_start": "2026-09-25",
+        "later_end": "2026-11-13",
+        "rainfall_mm": -174.36,
+        "temperature_c": -1.344,
+        "wind_ms": -0.639,
+        "soil_surface": 0.078
+      },
+      "soil": {
+        "kind": "wetness_index",
+        "units": "0–1",
+        "surface_parameter": "GWETTOP",
+        "root_parameter": "GWETROOT"
+      },
+      "returned_days": 100,
+      "returned_months": 4
+    },
+    {
+      "place": "Vientiane",
+      "latitude": 18,
+      "longitude": 102.6,
+      "period": "5y",
+      "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=PRECTOTCORR%2CT2M%2CT2M_MAX%2CT2M_MIN%2CWS2M%2CRH2M%2CSFMC%2CRZMC%2CGWETTOP%2CGWETROOT&community=AG&latitude=18.0&longitude=102.6&start=20210101&end=20251231&format=JSON&time-standard=UTC",
+      "source_products": [
+        "MERRA2",
+        "POWER"
+      ],
+      "fetched_at": "2026-11-15T02:53:14.714021+00:00",
+      "requested_start": "2021-01-01",
+      "requested_end": "2025-12-31",
+      "coverage": {
+        "rainfall_mm": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "PRECTOTCORR",
+          "source_units": "mm/day"
+        },
+        "temperature_c": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "T2M",
+          "source_units": "C"
+        },
+        "maximum_c": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "T2M_MAX",
+          "source_units": "C"
+        },
+        "minimum_c": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "T2M_MIN",
+          "source_units": "C"
+        },
+        "wind_ms": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "WS2M",
+          "source_units": "m/s"
+        },
+        "humidity_percent": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "RH2M",
+          "source_units": "%"
+        },
+        "soil_surface": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "GWETTOP",
+          "source_units": "1"
+        },
+        "soil_root": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "GWETROOT",
+          "source_units": "1"
+        }
+      },
+      "summary": {
+        "rainfall_mm": 6969.91,
+        "observed_rainfall_mm": 6969.91,
+        "rain_valid_days": 1826,
+        "days": 1826,
+        "rainy_days": 804,
+        "temperature_c": 25.787,
+        "maximum_c": 31.036,
+        "minimum_c": 21.428,
+        "wind_ms": 1.455,
+        "humidity_percent": 75.244,
+        "soil_surface": 0.632,
+        "soil_root": 0.631,
+        "rainy_day_frequency_percent": 44.0,
+        "longest_observed_dry_spell_days": 110,
+        "hottest_day": {
+          "date": "2024-05-01",
+          "rainfall_mm": 0.08,
+          "temperature_c": 38.09,
+          "maximum_c": 45.13,
+          "minimum_c": 32.0,
+          "wind_ms": 1.86,
+          "humidity_percent": 30.94,
+          "soil_surface": 0.2,
+          "soil_root": 0.45
+        },
+        "coldest_day": {
+          "date": "2025-01-12",
+          "rainfall_mm": 0.0,
+          "temperature_c": 14.18,
+          "maximum_c": 22.91,
+          "minimum_c": 7.47,
+          "wind_ms": 1.78,
+          "humidity_percent": 60.69,
+          "soil_surface": 0.49,
+          "soil_root": 0.51
+        },
+        "wettest_day": {
+          "date": "2021-04-04",
+          "rainfall_mm": 56.1,
+          "temperature_c": 26.66,
+          "maximum_c": 32.08,
+          "minimum_c": 22.62,
+          "wind_ms": 1.27,
+          "humidity_percent": 79.3,
+          "soil_surface": 0.72,
+          "soil_root": 0.58
+        },
+        "latest_soil": {
+          "date": "2025-12-31",
+          "rainfall_mm": 0.0,
+          "temperature_c": 21.5,
+          "maximum_c": 27.51,
+          "minimum_c": 16.3,
+          "wind_ms": 0.88,
+          "humidity_percent": 79.01,
+          "soil_surface": 0.6,
+          "soil_root": 0.59
+        }
+      },
+      "changes": {
+        "earlier_start": "2021-01-01",
+        "earlier_end": "2021-12-31",
+        "later_start": "2025-01-01",
+        "later_end": "2025-12-31",
+        "rainfall_mm": -123.13,
+        "temperature_c": 0.631,
+        "wind_ms": 0.104,
+        "soil_surface": -0.074
+      },
+      "soil": {
+        "kind": "wetness_index",
+        "units": "0–1",
+        "surface_parameter": "GWETTOP",
+        "root_parameter": "GWETROOT"
+      },
+      "returned_days": 1826,
+      "returned_months": 60
+    },
+    {
+      "place": "Paksong",
+      "latitude": 15.18,
+      "longitude": 106.23,
+      "period": "100d",
+      "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CWS2M%2CRH2M%2CIMERG_PRECTOT%2CSFMC%2CRZMC%2CGWETTOP%2CGWETROOT&community=AG&latitude=15.18&longitude=106.23&start=20260806&end=20261113&format=JSON&time-standard=UTC",
+      "source_products": [
+        "MERRA2",
+        "GEOSIT",
+        "IMERG",
+        "POWER"
+      ],
+      "fetched_at": "2026-11-15T02:53:14.109069+00:00",
+      "requested_start": "2026-08-06",
+      "requested_end": "2026-11-13",
+      "coverage": {
+        "rainfall_mm": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "PRECTOTCORR",
+          "source_units": "mm/day"
+        },
+        "temperature_c": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "T2M",
+          "source_units": "C"
+        },
+        "maximum_c": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "T2M_MAX",
+          "source_units": "C"
+        },
+        "minimum_c": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "T2M_MIN",
+          "source_units": "C"
+        },
+        "wind_ms": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "WS2M",
+          "source_units": "m/s"
+        },
+        "humidity_percent": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "RH2M",
+          "source_units": "%"
+        },
+        "soil_surface": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "GWETTOP",
+          "source_units": "1"
+        },
+        "soil_root": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "GWETROOT",
+          "source_units": "1"
+        }
+      },
+      "summary": {
+        "rainfall_mm": 658.15,
+        "observed_rainfall_mm": 658.15,
+        "rain_valid_days": 100,
+        "days": 100,
+        "rainy_days": 84,
+        "temperature_c": 24.365,
+        "maximum_c": 27.739,
+        "minimum_c": 21.558,
+        "wind_ms": 0.446,
+        "humidity_percent": 87.596,
+        "soil_surface": 0.86,
+        "soil_root": 0.848,
+        "rainy_day_frequency_percent": 84.0,
+        "longest_observed_dry_spell_days": 5,
+        "hottest_day": {
+          "date": "2026-10-04",
+          "rainfall_mm": 7.43,
+          "temperature_c": 25.99,
+          "maximum_c": 30.04,
+          "minimum_c": 22.39,
+          "wind_ms": 0.45,
+          "humidity_percent": 78.43,
+          "soil_surface": 0.92,
+          "soil_root": 0.92
+        },
+        "coldest_day": {
+          "date": "2026-11-10",
+          "rainfall_mm": 1.19,
+          "temperature_c": 21.84,
+          "maximum_c": 25.72,
+          "minimum_c": 17.82,
+          "wind_ms": 1.35,
+          "humidity_percent": 80.04,
+          "soil_surface": 0.76,
+          "soil_root": 0.76
+        },
+        "wettest_day": {
+          "date": "2026-09-20",
+          "rainfall_mm": 49.02,
+          "temperature_c": 24.88,
+          "maximum_c": 28.69,
+          "minimum_c": 22.15,
+          "wind_ms": 0.23,
+          "humidity_percent": 89.36,
+          "soil_surface": 0.93,
+          "soil_root": 0.9
+        },
+        "latest_soil": {
+          "date": "2026-11-13",
+          "rainfall_mm": 5.01,
+          "temperature_c": 23.36,
+          "maximum_c": 26.57,
+          "minimum_c": 20.44,
+          "wind_ms": 0.5,
+          "humidity_percent": 89.59,
+          "soil_surface": 0.78,
+          "soil_root": 0.76
+        }
+      },
+      "changes": {
+        "earlier_start": "2026-08-06",
+        "earlier_end": "2026-09-24",
+        "later_start": "2026-09-25",
+        "later_end": "2026-11-13",
+        "rainfall_mm": -333.97,
+        "temperature_c": 0.535,
+        "wind_ms": 0.216,
+        "soil_surface": -0.026
+      },
+      "soil": {
+        "kind": "wetness_index",
+        "units": "0–1",
+        "surface_parameter": "GWETTOP",
+        "root_parameter": "GWETROOT"
+      },
+      "returned_days": 100,
+      "returned_months": 4
+    },
+    {
+      "place": "Paksong",
+      "latitude": 15.18,
+      "longitude": 106.23,
+      "period": "5y",
+      "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=PRECTOTCORR%2CT2M%2CT2M_MAX%2CT2M_MIN%2CWS2M%2CRH2M%2CSFMC%2CRZMC%2CGWETTOP%2CGWETROOT&community=AG&latitude=15.18&longitude=106.23&start=20210101&end=20251231&format=JSON&time-standard=UTC",
+      "source_products": [
+        "MERRA2",
+        "POWER"
+      ],
+      "fetched_at": "2026-11-15T02:53:16.037541+00:00",
+      "requested_start": "2021-01-01",
+      "requested_end": "2025-12-31",
+      "coverage": {
+        "rainfall_mm": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "PRECTOTCORR",
+          "source_units": "mm/day"
+        },
+        "temperature_c": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "T2M",
+          "source_units": "C"
+        },
+        "maximum_c": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "T2M_MAX",
+          "source_units": "C"
+        },
+        "minimum_c": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "T2M_MIN",
+          "source_units": "C"
+        },
+        "wind_ms": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "WS2M",
+          "source_units": "m/s"
+        },
+        "humidity_percent": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "RH2M",
+          "source_units": "%"
+        },
+        "soil_surface": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "GWETTOP",
+          "source_units": "1"
+        },
+        "soil_root": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "GWETROOT",
+          "source_units": "1"
+        }
+      },
+      "summary": {
+        "rainfall_mm": 8560.09,
+        "observed_rainfall_mm": 8560.09,
+        "rain_valid_days": 1826,
+        "days": 1826,
+        "rainy_days": 914,
+        "temperature_c": 24.2,
+        "maximum_c": 29.011,
+        "minimum_c": 20.458,
+        "wind_ms": 0.3,
+        "humidity_percent": 79.915,
+        "soil_surface": 0.684,
+        "soil_root": 0.705,
+        "rainy_day_frequency_percent": 50.1,
+        "longest_observed_dry_spell_days": 80,
+        "hottest_day": {
+          "date": "2024-04-29",
+          "rainfall_mm": 0.0,
+          "temperature_c": 33.2,
+          "maximum_c": 39.26,
+          "minimum_c": 27.88,
+          "wind_ms": 0.32,
+          "humidity_percent": 43.5,
+          "soil_surface": 0.25,
+          "soil_root": 0.52
+        },
+        "coldest_day": {
+          "date": "2021-01-12",
+          "rainfall_mm": 0.0,
+          "temperature_c": 13.61,
+          "maximum_c": 20.47,
+          "minimum_c": 8.15,
+          "wind_ms": 0.47,
+          "humidity_percent": 69.89,
+          "soil_surface": 0.64,
+          "soil_root": 0.64
+        },
+        "wettest_day": {
+          "date": "2022-12-09",
+          "rainfall_mm": 80.1,
+          "temperature_c": 22.07,
+          "maximum_c": 27.58,
+          "minimum_c": 17.59,
+          "wind_ms": 0.3,
+          "humidity_percent": 84.65,
+          "soil_surface": 0.82,
+          "soil_root": 0.73
+        },
+        "latest_soil": {
+          "date": "2025-12-31",
+          "rainfall_mm": 0.0,
+          "temperature_c": 22.22,
+          "maximum_c": 29.3,
+          "minimum_c": 16.59,
+          "wind_ms": 0.22,
+          "humidity_percent": 71.02,
+          "soil_surface": 0.53,
+          "soil_root": 0.58
+        }
+      },
+      "changes": {
+        "earlier_start": "2021-01-01",
+        "earlier_end": "2021-12-31",
+        "later_start": "2025-01-01",
+        "later_end": "2025-12-31",
+        "rainfall_mm": -1358.98,
+        "temperature_c": 0.744,
+        "wind_ms": 0.024,
+        "soil_surface": -0.146
+      },
+      "soil": {
+        "kind": "wetness_index",
+        "units": "0–1",
+        "surface_parameter": "GWETTOP",
+        "root_parameter": "GWETROOT"
+      },
+      "returned_days": 1826,
+      "returned_months": 60
+    },
+    {
+      "place": "Phongsaly",
+      "latitude": 21.68,
+      "longitude": 102.1,
+      "period": "100d",
+      "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CT2M_MIN%2CPRECTOTCORR%2CWS2M%2CRH2M%2CIMERG_PRECTOT%2CSFMC%2CRZMC%2CGWETTOP%2CGWETROOT&community=AG&latitude=21.68&longitude=102.1&start=20260806&end=20261113&format=JSON&time-standard=UTC",
+      "source_products": [
+        "MERRA2",
+        "GEOSIT",
+        "IMERG",
+        "POWER"
+      ],
+      "fetched_at": "2026-11-15T02:53:15.494847+00:00",
+      "requested_start": "2026-08-06",
+      "requested_end": "2026-11-13",
+      "coverage": {
+        "rainfall_mm": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "PRECTOTCORR",
+          "source_units": "mm/day"
+        },
+        "temperature_c": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "T2M",
+          "source_units": "C"
+        },
+        "maximum_c": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "T2M_MAX",
+          "source_units": "C"
+        },
+        "minimum_c": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "T2M_MIN",
+          "source_units": "C"
+        },
+        "wind_ms": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "WS2M",
+          "source_units": "m/s"
+        },
+        "humidity_percent": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "RH2M",
+          "source_units": "%"
+        },
+        "soil_surface": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "GWETTOP",
+          "source_units": "1"
+        },
+        "soil_root": {
+          "valid_days": 100,
+          "expected_days": 100,
+          "missing_days": 0,
+          "first_date": "2026-08-06",
+          "last_date": "2026-11-13",
+          "parameter": "GWETROOT",
+          "source_units": "1"
+        }
+      },
+      "summary": {
+        "rainfall_mm": 429.86,
+        "observed_rainfall_mm": 429.86,
+        "rain_valid_days": 100,
+        "days": 100,
+        "rainy_days": 66,
+        "temperature_c": 23.127,
+        "maximum_c": 27.559,
+        "minimum_c": 19.38,
+        "wind_ms": 0.337,
+        "humidity_percent": 81.13,
+        "soil_surface": 0.676,
+        "soil_root": 0.659,
+        "rainy_day_frequency_percent": 66.0,
+        "longest_observed_dry_spell_days": 13,
+        "hottest_day": {
+          "date": "2026-10-01",
+          "rainfall_mm": 0.0,
+          "temperature_c": 25.82,
+          "maximum_c": 31.59,
+          "minimum_c": 20.55,
+          "wind_ms": 0.17,
+          "humidity_percent": 69.54,
+          "soil_surface": 0.5,
+          "soil_root": 0.52
+        },
+        "coldest_day": {
+          "date": "2026-11-09",
+          "rainfall_mm": 0.81,
+          "temperature_c": 16.59,
+          "maximum_c": 21.1,
+          "minimum_c": 12.07,
+          "wind_ms": 1.51,
+          "humidity_percent": 73.13,
+          "soil_surface": 0.74,
+          "soil_root": 0.75
+        },
+        "wettest_day": {
+          "date": "2026-11-12",
+          "rainfall_mm": 28.65,
+          "temperature_c": 14.72,
+          "maximum_c": 15.74,
+          "minimum_c": 13.45,
+          "wind_ms": 0.45,
+          "humidity_percent": 97.13,
+          "soil_surface": 0.81,
+          "soil_root": 0.79
+        },
+        "latest_soil": {
+          "date": "2026-11-13",
+          "rainfall_mm": 2.18,
+          "temperature_c": 15.48,
+          "maximum_c": 19.69,
+          "minimum_c": 12.4,
+          "wind_ms": 0.55,
+          "humidity_percent": 92.8,
+          "soil_surface": 0.79,
+          "soil_root": 0.79
+        }
+      },
+      "changes": {
+        "earlier_start": "2026-08-06",
+        "earlier_end": "2026-09-24",
+        "later_start": "2026-09-25",
+        "later_end": "2026-11-13",
+        "rainfall_mm": -60.76,
+        "temperature_c": -0.843,
+        "wind_ms": 0.54,
+        "soil_surface": 0.081
+      },
+      "soil": {
+        "kind": "wetness_index",
+        "units": "0–1",
+        "surface_parameter": "GWETTOP",
+        "root_parameter": "GWETROOT"
+      },
+      "returned_days": 100,
+      "returned_months": 4
+    },
+    {
+      "place": "Phongsaly",
+      "latitude": 21.68,
+      "longitude": 102.1,
+      "period": "5y",
+      "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=PRECTOTCORR%2CT2M%2CT2M_MAX%2CT2M_MIN%2CWS2M%2CRH2M%2CSFMC%2CRZMC%2CGWETTOP%2CGWETROOT&community=AG&latitude=21.68&longitude=102.1&start=20210101&end=20251231&format=JSON&time-standard=UTC",
+      "source_products": [
+        "MERRA2",
+        "POWER"
+      ],
+      "fetched_at": "2026-11-15T02:53:16.738297+00:00",
+      "requested_start": "2021-01-01",
+      "requested_end": "2025-12-31",
+      "coverage": {
+        "rainfall_mm": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "PRECTOTCORR",
+          "source_units": "mm/day"
+        },
+        "temperature_c": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "T2M",
+          "source_units": "C"
+        },
+        "maximum_c": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "T2M_MAX",
+          "source_units": "C"
+        },
+        "minimum_c": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "T2M_MIN",
+          "source_units": "C"
+        },
+        "wind_ms": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "WS2M",
+          "source_units": "m/s"
+        },
+        "humidity_percent": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "RH2M",
+          "source_units": "%"
+        },
+        "soil_surface": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "GWETTOP",
+          "source_units": "1"
+        },
+        "soil_root": {
+          "valid_days": 1826,
+          "expected_days": 1826,
+          "missing_days": 0,
+          "first_date": "2021-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "GWETROOT",
+          "source_units": "1"
+        }
+      },
+      "summary": {
+        "rainfall_mm": 7111.23,
+        "observed_rainfall_mm": 7111.23,
+        "rain_valid_days": 1826,
+        "days": 1826,
+        "rainy_days": 913,
+        "temperature_c": 20.921,
+        "maximum_c": 26.114,
+        "minimum_c": 16.536,
+        "wind_ms": 0.102,
+        "humidity_percent": 80.569,
+        "soil_surface": 0.66,
+        "soil_root": 0.645,
+        "rainy_day_frequency_percent": 50.0,
+        "longest_observed_dry_spell_days": 51,
+        "hottest_day": {
+          "date": "2024-05-01",
+          "rainfall_mm": 1.1,
+          "temperature_c": 30.37,
+          "maximum_c": 38.78,
+          "minimum_c": 21.4,
+          "wind_ms": 0.06,
+          "humidity_percent": 41.39,
+          "soil_surface": 0.32,
+          "soil_root": 0.47
+        },
+        "coldest_day": {
+          "date": "2021-01-11",
+          "rainfall_mm": 1.66,
+          "temperature_c": 4.55,
+          "maximum_c": 6.85,
+          "minimum_c": 2.52,
+          "wind_ms": 0.0,
+          "humidity_percent": 84.74,
+          "soil_surface": 0.71,
+          "soil_root": 0.7
+        },
+        "wettest_day": {
+          "date": "2024-09-09",
+          "rainfall_mm": 54.68,
+          "temperature_c": 22.27,
+          "maximum_c": 24.63,
+          "minimum_c": 20.64,
+          "wind_ms": 0.0,
+          "humidity_percent": 95.17,
+          "soil_surface": 0.92,
+          "soil_root": 0.78
+        },
+        "latest_soil": {
+          "date": "2025-12-31",
+          "rainfall_mm": 0.01,
+          "temperature_c": 16.19,
+          "maximum_c": 22.96,
+          "minimum_c": 9.25,
+          "wind_ms": 0.44,
+          "humidity_percent": 70.77,
+          "soil_surface": 0.54,
+          "soil_root": 0.54
+        }
+      },
+      "changes": {
+        "earlier_start": "2021-01-01",
+        "earlier_end": "2021-12-31",
+        "later_start": "2025-01-01",
+        "later_end": "2025-12-31",
+        "rainfall_mm": -580.22,
+        "temperature_c": 0.982,
+        "wind_ms": -0.024,
+        "soil_surface": -0.165
+      },
+      "soil": {
+        "kind": "wetness_index",
+        "units": "0–1",
+        "surface_parameter": "GWETTOP",
+        "root_parameter": "GWETROOT"
+      },
+      "returned_days": 1826,
+      "returned_months": 60
+    },
+    {
+      "place": "Vientiane",
+      "latitude": 18,
+      "longitude": 102.6,
+      "period": "1y",
+      "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=PRECTOTCORR%2CT2M%2CT2M_MAX%2CT2M_MIN%2CWS2M%2CRH2M%2CSFMC%2CRZMC%2CGWETTOP%2CGWETROOT&community=AG&latitude=18.0&longitude=102.6&start=20251114&end=20261113&format=JSON&time-standard=UTC",
+      "source_products": [
+        "MERRA2",
+        "GEOSIT",
+        "POWER"
+      ],
+      "fetched_at": "2026-11-15T02:53:17.090711+00:00",
+      "requested_start": "2025-11-14",
+      "requested_end": "2026-11-13",
+      "coverage": {
+        "rainfall_mm": {
+          "valid_days": 365,
+          "expected_days": 365,
+          "missing_days": 0,
+          "first_date": "2025-11-14",
+          "last_date": "2026-11-13",
+          "parameter": "PRECTOTCORR",
+          "source_units": "mm/day"
+        },
+        "temperature_c": {
+          "valid_days": 365,
+          "expected_days": 365,
+          "missing_days": 0,
+          "first_date": "2025-11-14",
+          "last_date": "2026-11-13",
+          "parameter": "T2M",
+          "source_units": "C"
+        },
+        "maximum_c": {
+          "valid_days": 365,
+          "expected_days": 365,
+          "missing_days": 0,
+          "first_date": "2025-11-14",
+          "last_date": "2026-11-13",
+          "parameter": "T2M_MAX",
+          "source_units": "C"
+        },
+        "minimum_c": {
+          "valid_days": 365,
+          "expected_days": 365,
+          "missing_days": 0,
+          "first_date": "2025-11-14",
+          "last_date": "2026-11-13",
+          "parameter": "T2M_MIN",
+          "source_units": "C"
+        },
+        "wind_ms": {
+          "valid_days": 365,
+          "expected_days": 365,
+          "missing_days": 0,
+          "first_date": "2025-11-14",
+          "last_date": "2026-11-13",
+          "parameter": "WS2M",
+          "source_units": "m/s"
+        },
+        "humidity_percent": {
+          "valid_days": 365,
+          "expected_days": 365,
+          "missing_days": 0,
+          "first_date": "2025-11-14",
+          "last_date": "2026-11-13",
+          "parameter": "RH2M",
+          "source_units": "%"
+        },
+        "soil_surface": {
+          "valid_days": 365,
+          "expected_days": 365,
+          "missing_days": 0,
+          "first_date": "2025-11-14",
+          "last_date": "2026-11-13",
+          "parameter": "GWETTOP",
+          "source_units": "1"
+        },
+        "soil_root": {
+          "valid_days": 365,
+          "expected_days": 365,
+          "missing_days": 0,
+          "first_date": "2025-11-14",
+          "last_date": "2026-11-13",
+          "parameter": "GWETROOT",
+          "source_units": "1"
+        }
+      },
+      "summary": {
+        "rainfall_mm": 1113.28,
+        "observed_rainfall_mm": 1113.28,
+        "rain_valid_days": 365,
+        "days": 365,
+        "rainy_days": 152,
+        "temperature_c": 26.253,
+        "maximum_c": 31.836,
+        "minimum_c": 21.583,
+        "wind_ms": 1.479,
+        "humidity_percent": 72.554,
+        "soil_surface": 0.587,
+        "soil_root": 0.592,
+        "rainy_day_frequency_percent": 41.6,
+        "longest_observed_dry_spell_days": 72,
+        "hottest_day": {
+          "date": "2026-04-16",
+          "rainfall_mm": 0.0,
+          "temperature_c": 34.17,
+          "maximum_c": 42.6,
+          "minimum_c": 26.78,
+          "wind_ms": 1.27,
+          "humidity_percent": 27.47,
+          "soil_surface": 0.2,
+          "soil_root": 0.45
+        },
+        "coldest_day": {
+          "date": "2025-11-28",
+          "rainfall_mm": 0.0,
+          "temperature_c": 15.16,
+          "maximum_c": 22.8,
+          "minimum_c": 8.42,
+          "wind_ms": 1.28,
+          "humidity_percent": 71.16,
+          "soil_surface": 0.71,
+          "soil_root": 0.69
+        },
+        "wettest_day": {
+          "date": "2026-05-20",
+          "rainfall_mm": 32.99,
+          "temperature_c": 27.25,
+          "maximum_c": 30.46,
+          "minimum_c": 25.12,
+          "wind_ms": 2.39,
+          "humidity_percent": 86.94,
+          "soil_surface": 0.75,
+          "soil_root": 0.62
+        },
+        "latest_soil": {
+          "date": "2026-11-13",
+          "rainfall_mm": 0.04,
+          "temperature_c": 24.36,
+          "maximum_c": 28.37,
+          "minimum_c": 20.08,
+          "wind_ms": 0.58,
+          "humidity_percent": 78.91,
+          "soil_surface": 0.7,
+          "soil_root": 0.73
+        }
+      },
+      "changes": {
+        "earlier_start": "2025-11-14",
+        "earlier_end": "2026-05-14",
+        "later_start": "2026-05-16",
+        "later_end": "2026-11-13",
+        "rainfall_mm": 737.17,
+        "temperature_c": 2.262,
+        "wind_ms": -0.007,
+        "soil_surface": 0.168
+      },
+      "soil": {
+        "kind": "wetness_index",
+        "units": "0–1",
+        "surface_parameter": "GWETTOP",
+        "root_parameter": "GWETROOT"
+      },
+      "returned_days": 365,
+      "returned_months": 13
+    },
+    {
+      "place": "Vientiane",
+      "latitude": 18,
+      "longitude": 102.6,
+      "period": "10y",
+      "source_url": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=PRECTOTCORR%2CT2M%2CT2M_MAX%2CT2M_MIN%2CWS2M%2CRH2M%2CSFMC%2CRZMC%2CGWETTOP%2CGWETROOT&community=AG&latitude=18.0&longitude=102.6&start=20160101&end=20251231&format=JSON&time-standard=UTC",
+      "source_products": [
+        "MERRA2",
+        "POWER"
+      ],
+      "fetched_at": "2026-11-15T02:53:17.876837+00:00",
+      "requested_start": "2016-01-01",
+      "requested_end": "2025-12-31",
+      "coverage": {
+        "rainfall_mm": {
+          "valid_days": 3653,
+          "expected_days": 3653,
+          "missing_days": 0,
+          "first_date": "2016-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "PRECTOTCORR",
+          "source_units": "mm/day"
+        },
+        "temperature_c": {
+          "valid_days": 3653,
+          "expected_days": 3653,
+          "missing_days": 0,
+          "first_date": "2016-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "T2M",
+          "source_units": "C"
+        },
+        "maximum_c": {
+          "valid_days": 3653,
+          "expected_days": 3653,
+          "missing_days": 0,
+          "first_date": "2016-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "T2M_MAX",
+          "source_units": "C"
+        },
+        "minimum_c": {
+          "valid_days": 3653,
+          "expected_days": 3653,
+          "missing_days": 0,
+          "first_date": "2016-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "T2M_MIN",
+          "source_units": "C"
+        },
+        "wind_ms": {
+          "valid_days": 3653,
+          "expected_days": 3653,
+          "missing_days": 0,
+          "first_date": "2016-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "WS2M",
+          "source_units": "m/s"
+        },
+        "humidity_percent": {
+          "valid_days": 3653,
+          "expected_days": 3653,
+          "missing_days": 0,
+          "first_date": "2016-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "RH2M",
+          "source_units": "%"
+        },
+        "soil_surface": {
+          "valid_days": 3653,
+          "expected_days": 3653,
+          "missing_days": 0,
+          "first_date": "2016-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "GWETTOP",
+          "source_units": "1"
+        },
+        "soil_root": {
+          "valid_days": 3653,
+          "expected_days": 3653,
+          "missing_days": 0,
+          "first_date": "2016-01-01",
+          "last_date": "2025-12-31",
+          "parameter": "GWETROOT",
+          "source_units": "1"
+        }
+      },
+      "summary": {
+        "rainfall_mm": 15001.47,
+        "observed_rainfall_mm": 15001.47,
+        "rain_valid_days": 3653,
+        "days": 3653,
+        "rainy_days": 1666,
+        "temperature_c": 25.743,
+        "maximum_c": 30.913,
+        "minimum_c": 21.415,
+        "wind_ms": 1.434,
+        "humidity_percent": 75.629,
+        "soil_surface": 0.651,
+        "soil_root": 0.654,
+        "rainy_day_frequency_percent": 45.6,
+        "longest_observed_dry_spell_days": 119,
+        "hottest_day": {
+          "date": "2024-05-01",
+          "rainfall_mm": 0.08,
+          "temperature_c": 38.09,
+          "maximum_c": 45.13,
+          "minimum_c": 32.0,
+          "wind_ms": 1.86,
+          "humidity_percent": 30.94,
+          "soil_surface": 0.2,
+          "soil_root": 0.45
+        },
+        "coldest_day": {
+          "date": "2019-12-07",
+          "rainfall_mm": 0.0,
+          "temperature_c": 12.86,
+          "maximum_c": 21.49,
+          "minimum_c": 5.56,
+          "wind_ms": 1.91,
+          "humidity_percent": 64.62,
+          "soil_surface": 0.56,
+          "soil_root": 0.56
+        },
+        "wettest_day": {
+          "date": "2017-05-16",
+          "rainfall_mm": 71.52,
+          "temperature_c": 24.29,
+          "maximum_c": 26.77,
+          "minimum_c": 20.61,
+          "wind_ms": 2.61,
+          "humidity_percent": 87.87,
+          "soil_surface": 0.83,
+          "soil_root": 0.67
+        },
+        "latest_soil": {
+          "date": "2025-12-31",
+          "rainfall_mm": 0.0,
+          "temperature_c": 21.5,
+          "maximum_c": 27.51,
+          "minimum_c": 16.3,
+          "wind_ms": 0.88,
+          "humidity_percent": 79.01,
+          "soil_surface": 0.6,
+          "soil_root": 0.59
+        }
+      },
+      "changes": {
+        "earlier_start": "2016-01-01",
+        "earlier_end": "2016-12-31",
+        "later_start": "2025-01-01",
+        "later_end": "2025-12-31",
+        "rainfall_mm": -144.47,
+        "temperature_c": -0.762,
+        "wind_ms": -0.066,
+        "soil_surface": 0.019
+      },
+      "soil": {
+        "kind": "wetness_index",
+        "units": "0–1",
+        "surface_parameter": "GWETTOP",
+        "root_parameter": "GWETROOT"
+      },
+      "returned_days": 3653,
+      "returned_months": 120
+    }
+  ]
+}

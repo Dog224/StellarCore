@@ -1,0 +1,5 @@
+Django>=5.2.8,<5.3
+numpy>=2.3,<3
+tifffile>=2025.10.16,<2027
+phonenumbers>=9.0,<10
+python-dotenv>=1.2,<2

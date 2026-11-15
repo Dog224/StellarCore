@@ -1,0 +1,6 @@
+{% load static %}
+<div class="orbee-page-layout">
+  <section class="orbee-introduction"><p class="eyebrow">LET'S GROW TOGETHER</p><div class="orbee-portrait-stage"><span class="orbee-hello-note">Hello, farmer!</span><div class="orbee-portrait orbee-sprite" role="img" aria-label="Orbee, a fluffy white mascot with a plumeria flower"></div></div><h2>A little help.<br>A better growing day.</h2><p>Meet Orbee, your friendly MekongRise farm companion. Choose a topic or type a question to find your next step.</p><span class="orbee-introduction-tag">Made for farmers. Here to help.</span></section>
+  {% include 'website/orbee_chat.html' %}
+</div>
+<details class="workspace-card"><summary>Your planting calendar</summary><p>{% if field %}Your saved plan: {{ field.next_crop }} after {{ field.previous_crop }}. Planting date: {{ field.planting_date|date:'j M Y' }}. Conditional harvest: {{ harvest|date:'j M Y' }}.{% else %}Set your field plan to see planting and harvest dates.{% endif %}</p><a href="{% url 'workspace' 'crops' %}">View crop plan &amp; rotation &#8594;</a></details>
