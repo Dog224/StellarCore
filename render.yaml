@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: stellarcore
+    runtime: python
+    plan: free
+    buildCommand: ./build.sh
+    startCommand: gunicorn stellas.wsgi:application
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.7
+      - key: DJANGO_DEBUG
+        value: "false"
+      - key: DJANGO_SECRET_KEY
+        generateValue: true
+      - key: ANTHROPIC_API_KEY
+        sync: false
